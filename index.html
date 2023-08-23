@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  font-size: 25px;
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Style the header */
+header {
+  background-color: #0000ff;
+  padding: 2px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 420px; /* only for demonstration, should be removed */
+  background: #eeeeee;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #FFFFFF;
+  height: 420px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0000ff;
+  padding: 0.02999999px;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h1>City Gallery</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style="font-size:20px"><a href="https://rivaldoputra110802.github.io/nomor2london/">London</a></li> <br>
+      <li style="font-size:20px"><a href="https://rivaldoputra110802.github.io/nomor2paris/">Paris</a></li> <br>
+      <li style="font-size:20px"><a href="https://rivaldoputra110802.github.io/nomor2tokyo/">Tokyo</a></li> 
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>Paris</h2>
+    <p style="text-align:left;"> <img src="https://tse4.mm.bing.net/th?id=OIP.HCPvjJCcVqRJRPzROVU20gHaEn&pid=Api&P=0&h=180" alt="Smiley face" style="float:right;width:420px;height:250px;"> Paris, city and capital of France, situated in the north-central part of the country. People were living on the site of the present-day city, located along the Seine River some 233 miles 
+	(375 km) upstream from the river’s mouth on the English Channel (La Manche), by about 7600 BCE. The modern city has spread from the island (the Île de la Cité) and far beyond both banks of the Seine.</p>
+</section>
+
+<footer>
+  <p>Copyright @ Rivaldo Putra</p>
+</footer>
+
+</body>
+</html>
+
